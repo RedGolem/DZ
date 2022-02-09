@@ -1,0 +1,14 @@
+﻿Console.Write("Введите первое число и нажмите клавишу Enter: ");
+string a = Console.ReadLine();
+int a1 = Convert.ToInt32(a);
+Console.Write("Введите второе число и нажмите клавишу Enter: ");
+string b = Console.ReadLine();
+int b1 = Convert.ToInt32(b);
+Console.Write("Введите третье число и нажмите клавишу Enter: ");
+string с = Console.ReadLine();
+int num = Convert.ToInt32(с);
+int m = a1;
+if (a1 > m) m = a1;
+if (b1 > m) m = b1;
+if (num > m) m = num;
+Console.WriteLine("Наибольшее число:" + m.ToString());
