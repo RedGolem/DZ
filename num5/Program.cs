@@ -1,7 +1,7 @@
 ﻿int Thnum (int num)
 {
-    int thm = num % 100;
-    int th = thm / 10;
+    int thm = num % 1000;
+    int th = thm / 100;
     return th;
 }
 
