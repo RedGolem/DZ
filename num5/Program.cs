@@ -1,14 +1,14 @@
 ﻿int Thnum (int num)
 {
-    int thm = num % 1000;
-    int th = thm / 100;
+    int thm = num % 100;
+    int th = thm / 10;
     return th;
 }
 
 
 
 
-Console.Write("Введите первое число и нажмите клавишу Enter: ");
+Console.Write("Введите трехзначное число и нажмите клавишу Enter: ");
 string numstr = Console.ReadLine();
 int num = Convert.ToInt32(numstr);
 
