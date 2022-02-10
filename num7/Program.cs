@@ -1,19 +1,29 @@
-﻿int Last (int num)
+﻿int Counter(int num)
 {
-    int last = num % 10;
-    return last;
+    int count = 0;
+    while (num > 0)
+    {
+        num = num / 10;
+        count ++;
+    }
+    return count;
 }
-int Proverka (int num)
+int therd (int num, int arg)
 {
-    if (num == 0) Console.WriteLine("Последней цифры нет");
-    else Console.Write(num);
-    return num;
+    int count = 0;
+
+    while (count < (num - 3))
+        {
+            arg = arg / 10;
+            count ++;
+        }
+    arg = arg % 10;
+    return arg;
 }
 
 
-
-
-Console.Write("Введите трехзначное число и нажмите клавишу Enter: ");
+Console.Write("Введите число и нажмите клавишу Enter: ");
 string numstr = Console.ReadLine();
 int num = Convert.ToInt32(numstr);
-int result = Proverka(Last(num));
+int result = therd (Counter(num), num);
+Console.Write(result);
